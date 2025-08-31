@@ -1,0 +1,11 @@
+/* primero se declaran los colores que elegimos
+me falto decir que siempre se pone llame en el texto de css 
+no me acuerdo los colores jasajas*/
+
+:root{
+--verde: #507D77;
+--oscuro: #334B48;
+--verde-gris:#96B1AC;
+--gris-azul:#677591;
+--azul-claro: #9ba9c7;
+}

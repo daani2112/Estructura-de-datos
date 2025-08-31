@@ -1,11 +1,53 @@
+<!--primero tenes que descargar las extensiones de html y css
+lo que tiene de bueno hacerlo asi es que te autocompleta las etiquetas
+para la estructura basica de una pagina web se hace asi 
+cualquier consulta me decis -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Bandeja de entrada</title>
+    <link rel="stylesheet" href="style/style.css">    <!--lo que hice ahi es una conexion a el archivo css, este le da el estilo y color a la pagina-->
 </head>
 <body>
-    <h4>hola mundo!!</h4>
+    <header class="topbar">
+        <div class="logo">Mail Clone</div>
+        <input type="text" class="search" 
+        placeholder="Buscar correos">    <!--el search seria para que a la etiqueta input lo tome como un espacio para que escriba y busque algo-->
+        <div class="user"></div> <!--user es donde ira el nombre del usuario mas que nada-->
+    </header>
+    
+ <!--se guarda con ctrl + s-->
+    <div class="container"> <!--contiene la unformacion dentro de este div-->
+        <!--menu lateral va a estar aca-->
+        <aside class="sidebar">
+            <button class="compose">Redactar</button>
+
+            <ul>
+                <li class="active">Recibidos</li> <!--active es para que cuando reciba algo de como una alerta por asi decirlo-->
+                <li>Destacados</li>
+                <li>Enviados</li>
+                <li>Papelera</li>
+            </ul>
+        </aside>
+
+        <!--aca va a estar la bandeja de entrada, estos comentarios despueslos arreglo, son para que entiendas -->
+        <main class="inbox"> <!--seria la caja de mensaje/mails-->
+            <div class="email">
+                <div class="sender">Usuario</div> <!--sender es el de enviador(lo acabo de googlear)-->
+                <div class="subject">proyecto piola</div> <!--es sujeto donde se pone info en el mial-->
+                <div class="preview">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+            </div>
+
+            <div class=" email unread">
+                <div class="sender">alguien random</div>
+                <div class=" subject">algo nuevo</div>
+                <div class="preview"> mas info que nose como rellenar...</div>
+            </div> 
+        </main>
+    </div>
+
 </body>
 </html>
